@@ -15,3 +15,13 @@
 </ul>
 
 <p>Si jamais je dépose quand même un export de la base que j'ai créer pour les tests</p>
+
+CREATE TABLE `jobs` (
+  `id` int(11) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `team` varchar(255) NOT NULL,
+  `localisation` varchar(255) NOT NULL,
+  `date_publication` varchar(255) NOT NULL,
+  `contenu` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
