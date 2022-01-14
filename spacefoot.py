@@ -1,4 +1,3 @@
-from operator import imod
 import requests
 from bs4 import BeautifulSoup
 from mysql.connector import (connection)
@@ -77,7 +76,6 @@ mycursor = conn.cursor()
 # Insertion dans la base de données
 
 if conn:
-    print('Réussie')
     for i in offre:
         req = 'insert into jobs(type, titre, team, localisation, date_publication, contenu) values (%s, %s, %s, %s, %s, %s)'
         val = (i[0], i[1], i[2], i[3], i[4], i[5])
