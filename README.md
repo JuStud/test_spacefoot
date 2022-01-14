@@ -25,3 +25,10 @@ CREATE TABLE `jobs` (
   `date_publication` varchar(255) NOT NULL,
   `contenu` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`);
+  
+ ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+COMMIT;
