@@ -32,3 +32,11 @@ ALTER TABLE `jobs`
  ALTER TABLE `jobs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 COMMIT;
+
+<h5>Requirement avec pip</h5>
+<ul>
+    <li>pip install requests</li>
+    <li>pip install beautifulsoup4</li>
+    <li>pip install mysql-connector-python</li>
+    <li>pip install python-csv</li>
+</ul>
